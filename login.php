@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +10,7 @@
   </head>
   <body>
 
-    <form action="" method="post">
+    <form action="check_login.php" method="post">
       <div>
         <label for="username">Identifiant</label>
         <input type="text" name="username">
@@ -17,8 +20,9 @@
         <input type="password" name="password">
       </div>
       <div>
-        <button type="button" name="button">Se connecter</button>
+        <button type="submit" name="button">Se connecter</button>
       </div>
     </form>
+
   </body>
 </html>
